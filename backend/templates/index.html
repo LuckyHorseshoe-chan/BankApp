@@ -1,0 +1,13 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Bank Application Home</h1>
+  <p>Welcome to Bank, a website developed by <em>Lucky Horseshoe</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>The application has the following record counts:</p>
+  <ul>
+    <li><strong>Users:</strong> {{ num_users }}</li>
+    <li><strong>Checks:</strong> {{ num_checks }}</li>
+    <li><strong>Users available:</strong> {{ num_unblocked_users }}</li>
+  </ul>
+{% endblock %}
